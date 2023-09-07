@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../public/index.css" />
+    <title>genius-template-single</title>
+  </head>
+  <body>
+    <div
+      id="banner"
+      tabindex="-1"
+      class="flex gap-8 justify-between items-start py-3 px-6 w-full bg-black border-gray-200 sm:items-center dark:border-gray-700 lg:py-4 dark:bg-gray-800"
+    >
+      <p class="text-sm font-light text-gray-200 dark:text-gray-400">
+        Supercharge your hiring by taking advantage of our
+        <a
+          class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
+          href="#"
+        >
+          limited-time sale
+        </a>
+        for Designer Search + Job Board. Unlimited access to over 190K
+        top-ranked candidates and the #1 design job board.
+      </p>
+      <button
+        data-collapse-toggle="banner"
+        type="button"
+        class="flex items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-none text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
+      >
+        <svg
+          class="w-5 h-5"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+    </div>
+
+    <header class="bg-sky-500">
+      <nav
+        class="border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 flex justify-start"
+      >
+        <div class="flex items-center mr-auto">
+          <div
+            class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+            id="mobile-menu-search"
+          >
+            <a href="https://flowbite.com" class="flex items-center mr-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-9 h-9 mr-2 rounded-full p-1 border-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
+                />
+              </svg>
+
+              <span
+                class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+              >
+                DVN.Music
+              </span>
+            </a>
+            <ul
+              class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Featured
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Charts
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Videos
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Promote your music
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 e lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="flex items-center">
+          <label for="search-mobile" class="sr-only"> Search </label>
+          <div class="relative w-full">
+            <div
+              class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="search"
+              id="search-mobile"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-none focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Search for anything..."
+              required
+            />
+          </div>
+        </form>
+      </nav>
+    </header>
+
+    <div id="hero" class="flex bg-sky-500 h-80 overflow-hidden">
+      <div class="flex h-96 max-w-screen-2xl w-full mx-auto px-6">
+        <div
+          class="flex w-2/6 px-6 mt-6 bg-no-repeat bg-[url('https://t2.genius.com/unsafe/351x351/https%3A%2F%2Fimages.genius.com%2F758bff469fbe5fd499e95234f45e2424.640x640x1.jpg')] bg-contain"
+        ></div>
+        <div class="flex flex-col w-full px-6 mt-6">
+          <div class="flex flex-col h-72">
+            <h1 class="font-medium text-4xl">Screaming Suicide</h1>
+            <div>
+              <span class="text-lg underline cursor-pointer">
+                <a classname="underline">Metallica </a>
+              </span>
+              Track 3 on
+              <span class="underline">
+                <a class="cursor-pointer"> 72 Seasons </a>
+              </span>
+            </div>
+            <p class="mt-6 text-sm font-medium">Produced By:</p>
+            <div class="text-lg w-60 leading-tight">
+              <span class="underline mr-1">
+                <a class="my-2">Greg Fidelman</a>
+              </span>
+              ,
+              <span class="underline mx-1">
+                <a>James Hetfield</a>
+              </span>
+              ,
+              <span class="underline mx-1">
+                <a> & 1 more</a>
+              </span>
+            </div>
+
+            <div
+              class="flex flex-col sm:flex-row space-x-3 sm:justify-start mt-auto"
+            >
+              <a
+                href="#"
+                class="text-gray-900 dark:hover:text-white mr-5 flex justify-center items-center"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="black"
+                  class="w-7 h-8 mr-1"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"
+                  />
+                </svg>
+                Jan. 19, 2023
+              </a>
+
+              <div class="flex flex-row gap-3">
+                <a
+                  href="#"
+                  class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white"
+                >
+                  <svg
+                    class="w-7 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="sr-only">Facebook page</span>
+                </a>
+
+                <a
+                  href="#"
+                  class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white"
+                >
+                  <svg
+                    class="w-7 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="sr-only">Instagram page</span>
+                </a>
+                <a
+                  href="#"
+                  class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white"
+                >
+                  <svg
+                    class="w-7 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+                    />
+                  </svg>
+                  <span class="sr-only">Twitter page</span>
+                </a>
+
+                <a
+                  href="#"
+                  class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white"
+                >
+                  <svg
+                    class="w-7 h-8"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <span class="sr-only">Dribbbel account</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto">
+      <div
+        id="lyrics"
+        class="prose-lg font-normal max-w-screen-lg text-xl mx-auto 2xl:ml-0 mt-28 px-6"
+      >
+        <p>
+          [Verse 1]
+          <br />
+          Mama don't pray for my success anymore, yeah
+          <br />
+          But mama still prays for me
+          <br />
+          Seein' the world ain't really seein' the world
+          <br />
+          Through a window from A to B<br />
+          Between alcohol and women and Adderall and adrenaline
+          <br />I don't ever get no rest
+          <br />
+          Signed my life away to be the life of the party
+          <br />
+          Yeah, to everybody else
+          <br />
+          <br />
+          [Chorus]
+          <br />I look like a rockstar, in and out of cop cars
+          <br />
+          Livin' out a suitcase, trashin' hotel bars
+          <br />
+          If I see the sunrise, it's 'cause I stayed up all night
+          <br />
+          Drinkin' 'cause I need to, damn it, what a good life
+          <br />
+          Judgin' by my long hair, you might think I don't care
+          <br />
+          Sittin' here, sippin' and bitchin' about a spot where
+          <br />
+          PeoplÐµ would kill to be, kill to be, kill to be
+          <br />
+          But y'all, it ain't as good as it seems, this livin' thÐµ dream is
+          <br />
+          Killin' me, killin' me, killin' me
+          <br />
+          It's killin' me, killin' me, killin' me
+          <br />
+          [Verse 2]
+          <br />
+          Another day, another venue
+          <br />
+          There's trouble to get into
+          <br />
+          And love ain't on the menu again
+          <br />
+          Lonely as an eagle
+          <br />I meet a thousand people
+          <br />
+          Who think I got a thousand friends
+          <br />
+          <br />
+          [Refrain]
+          <br />
+          Ooh
+          <br />
+          There's a stranger in the mirror
+          <br />
+          Ooh
+          <br />
+          But accordin' to the pictures
+          <br />
+          <br />
+          [Chorus]
+          <br />
+          I'm a rockstar, in and out of cop cars
+          <br />
+          Livin' out a suitcase, trashin' hotel bars
+          <br />
+          If I see the sunrise, it's 'cause I stayed up all night
+          <br />
+          Drinkin' 'cause I need to, damn it, what a good life
+          <br />
+          Judgin' by my long hair, you might think I don't care
+          <br />
+          Sittin' here, sippin' and bitchin' about a spot where
+          <br />
+          People would kill to be, kill to be, kill to be
+          <br />
+          But y'all, it ain't as good as it seems, this livin' the dream is
+          <br />
+          Killin' me, killin' me, killin' me
+          <br />
+          It's killin' me, killin' me, killin' me
+          <br />
+          Killin' me, killin' me, killin' me
+          <br />
+          Mama don't pray for my success anymore, yeah
+          <br />
+          But mama still prays for me Mama don't pray for my success anymore,
+          yeah
+          <br />
+          But mama still prays for me <br />
+          <br />
+          Seein' the world ain't really seein' the world
+          <br />
+          Through a window from A to B Seein' the world ain't really seein' the
+          world
+          <br />
+          Through a window from A to B <br />
+          <br />
+          in and out of cop cars in and out of cop cars <br />
+          If I see the sunrise, it's 'cause I stayed up all night
+          <br />
+          Drinkin' 'cause I need to, damn it, what a good life If I see the
+          sunrise, it's 'cause I stayed up all night
+          <br />
+          Drinkin' 'cause I need to, damn it, what a good life <br />
+          <br />
+          [Refrain]
+          <br />
+          Ooh
+          <br />
+          There's a stranger in the mirror
+          <br />
+          Ooh
+          <br />
+          But accordin' to the pictures
+          <br />
+          <br />
+          [Chorus]
+          <br />
+          I'm a rockstar, in and out of cop cars
+          <br />
+          Livin' out a suitcase, trashin' hotel bars
+          <br />
+          If I see the sunrise, it's 'cause I stayed up all night
+          <br />
+          Drinkin' 'cause I need to, damn it, what a good life
+          <br />
+          Judgin' by my long hair, you might think I don't care
+          <br />
+          Sittin' here, sippin' and bitchin' about a spot where
+          <br />
+          People would kill to be, kill to be, kill to be
+          <br />
+          But y'all, it ain't as good as it seems, this livin' the dream is
+          <br />
+          Killin' me, killin' me, killin' me
+          <br />
+          It's killin' me, killin' me, killin' me
+          <br />
+          Killin' me, killin' me, killin' me <br />
+          <br />
+        </p>
+      </div>
+    </div>
+    <div
+      class="prose-lg font-normal max-w-screen-lg 2xl:max-w-screen-xl text-xl mx-auto my-10 px-6"
+    >
+      <div class="flex space-x-3 sm:justify-start mt-auto">
+        <a
+          href="#"
+          class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white rounded-full px-3 border-4 border-gray-200"
+        >
+          <svg
+            class="w-7 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="sr-only">Facebook page</span>
+        </a>
+        <a
+          href="#"
+          class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white rounded-full px-3 border-4 border-gray-200"
+        >
+          <svg
+            class="w-7 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="sr-only">Instagram page</span>
+        </a>
+        <a
+          href="#"
+          class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white rounded-full px-3 border-4 border-gray-200"
+        >
+          <svg
+            class="w-7 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"
+            />
+          </svg>
+          <span class="sr-only">Twitter page</span>
+        </a>
+
+        <a
+          href="#"
+          class="hover:bg-gray-200 text-gray-900 hover:text-gray-400 dark:hover:text-white rounded-full px-3 border-4 border-gray-200"
+        >
+          <svg
+            class="w-7 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span class="sr-only">Dribbbel account</span>
+        </a>
+      </div>
+    </div>
+
+    <section class="bg-black dark:bg-gray-900">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+        <div class="mx-auto max-w-screen-md sm:text-center">
+          <h2
+            class="mb-4 text-3xl tracking-tight font-medium text-gray-200 sm:text-4xl dark:text-white"
+          >
+            Sign up for our newsletter
+          </h2>
+
+          <form action="#">
+            <div
+              class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0"
+            >
+              <div class="relative w-full">
+                <label
+                  for="email"
+                  class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  Email address
+                </label>
+                <div
+                  class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+                >
+                  <svg
+                    class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                    ></path>
+                    <path
+                      d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                    ></path>
+                  </svg>
+                </div>
+                <input
+                  class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-none border border-gray-300 sm:rounded-none sm:rounded-nonefocus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                  placeholder="Enter your email"
+                  type="email"
+                  id="email"
+                  required=""
+                />
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-none border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-none hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+            <div
+              class="mx-auto text-center max-w-screen-sm text-sm text-gray-200 newsletter-form-footer dark:text-gray-300"
+            >
+              We care about the protection of your data.
+              <a
+                href="#"
+                class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+              >
+                Read our Privacy Policy
+              </a>
+              .
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="bg-sky-500 py-16">
+      <div
+        class="max-w-screen-lg 2xl:max-w-screen-xl mx-auto prose-h2:text-6xl prose-h3:text-4xl prose-lg font-normal text-xl"
+      >
+        <div class="max-w-screen-md mx-auto xl:ml-0 px-6">
+          <h2>About</h2>
+          <p>
+            Screaming Suicide is the third track from Metallica’s upcoming 11th
+            studio album 72 Seasons which will be released on April 14th, 2023.
+            The song talks about suicide, specifically it being a taboo word and
+            how the topic is frowned upon.
+          </p>
+          <h3>Ask us a question about this song</h3>
+          <input
+            class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-none border border-gray-300 sm:rounded-none sm:rounded-nonefocus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+            placeholder=""
+            type="email"
+            id="email"
+            required=""
+          />
+
+          <div
+            id="accordion-color"
+            data-accordion="collapse"
+            data-active-classes=" dark:bg-gray-800 text-blue-600 dark:text-white"
+          >
+            <h4 id="accordion-color-heading-1">
+              <button
+                type="button"
+                class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-200 border border-b-0 border-black bg-black rounded-none focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800"
+                data-accordion-target="#accordion-color-body-1"
+                aria-expanded="true"
+                aria-controls="accordion-color-body-1"
+              >
+                <span>What have the artists said about the song?</span>
+
+                <svg
+                  data-accordion-icon
+                  class="w-6 h-6 rotate-180 shrink-0"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </h4>
+            <div
+              id="accordion-color-body-1"
+              class=""
+              aria-labelledby="accordion-color-heading-1"
+            >
+              <div
+                class="p-5 font-normal prose-lg text-xl border-black dark:border-gray-700 dark:bg-gray-900"
+              >
+                <p class="mb-2 text-gray-900 italic dark:text-gray-400">
+                  “Screaming Suicide” addresses the taboo word of suicide. The
+                  intention is to communicate about the darkness we feel inside.
+                  It’s ridiculous to think we should deny that we have these
+                  thoughts. At one point or another I believe most people have
+                  thought about it. To face it is to speak the unspoken. If it’s
+                  a human experience, we should be able to talk about it. You
+                  are not alone." <br />
+                  <br />— James Hetflied
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="p-6 sm:p-0 mt-16 prose-lg font-normal text-xl border-black dark:border-gray-700 dark:bg-gray-900 border"
+            >
+              <div
+                class="flex flex-col sm:flex-row content-center items-center justify-center px-6"
+              >
+                <img
+                  class="w-56"
+                  src="https://www.revolvermag.com/sites/default/files/styles/original_image__844px_x_473px_/public/media/section-media/master_cover.jpg?itok=L1JgJGah&timestamp=1508341064"
+                />
+                <div class="w-full px-6">
+                  <p>
+                    72 Seasons (2023)
+                    <br />
+                    Metallica
+                  </p>
+                </div>
+              </div>
+
+              <div class="">
+                <ul
+                  class="grid-cols-2 grid text-sm underline mx-auto px-0 sm:px-6 cursor-pointer"
+                >
+                  <li>1. 72 Seasons (Unreleased)</li>
+                  <li>2. Shadows Follow (Unreleased)</li>
+                  <li>3.Screaming Suicide (Unreleased)</li>
+                  <li>4. Sleepwalk My Life Away (Unreleased)</li>
+                  <li>5.You Must Burn! (Unreleased)</li>
+                  <li>6. Lux Æterna 7.(Unreleased)</li>
+                  <li>7. Crown of Barbed (Unreleased)</li>
+                  <li>8. Chasing Light (Unreleased)</li>
+                  <li>9. If Darkness Had a Son (Unreleased)</li>
+                  <li>10. Too Far Gone? (Unreleased)</li>
+                  <li>11. Room of Mirrors (Unreleased)</li>
+                  <li>12. Inamorata (Unreleased)</li>
+                </ul>
+
+                <div id="album-box">
+                  <ul
+                    class="grid-cols-1 sm:grid-cols-2 grid text-sm underline mx-auto px-0 sm:px-6 cursor-pointer"
+                  >
+                    <li class="flex">
+                      <img
+                        class="w-20"
+                        src="https://assets.genius.com/images/default_cover_art.png?1674059861"
+                      />
+                      <p class="w-32 items-center justify-center flex px-6">
+                        1. 72 Seasons (Unreleased)
+                      </p>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="w-20"
+                        src="https://assets.genius.com/images/default_cover_art.png?1674059861"
+                      />
+                      <p class="w-32 items-center justify-center flex px-6">
+                        2. Shadows Follow (Unreleased)
+                      </p>
+                    </li>
+                    <li class="flex">
+                      <img
+                        class="w-20"
+                        src="https://assets.genius.com/images/default_cover_art.png?1674059861"
+                      />
+                      <p class="w-32 items-center justify-center flex px-6">
+                        3.Screaming Suicide (Unreleased)
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div
+              id="credits"
+              class="pb-10 border-b prose-lg font-normal text-xl border-black dark:border-gray-700 dark:bg-gray-900"
+            >
+              <div class="flex justify-start">
+                <div class="px-6">
+                  <h3>Credits</h3>
+                </div>
+              </div>
+
+              <div id="credit-list" class="mx-auto px-0 p-6 sm:p-0">
+                <ul class="grid-cols-2 grid text-sm cursor-pointer">
+                  <li>
+                    Produced By
+                    <br />
+                    <span class="underline">
+                      Greg Fidelman, James Hetfield & Lars Ulrich
+                    </span>
+                  </li>
+                  <li>
+                    Written By
+                    <br />
+                    <span class="underline">
+                      James Hetfield, Robert Trujillo & Lars Ulrich
+                    </span>
+                  </li>
+                  <li>
+                    Video Dp <br />
+                    <span class="underline">Joshua Zucker-Pluda</span>
+                  </li>
+                  <li>
+                    Video Production
+                    <br />
+                    <span class="underline">Designer Kurt Gefke</span>
+                  </li>
+                  <li>
+                    Video Gaffer
+                    <br />
+                    <span class="underline"> Drew Valenti</span>
+                  </li>
+                  <li>
+                    Video Key Grip <br />
+                    <span class="underline">Charles Lenz</span>
+                  </li>
+                  <li>
+                    Video Editor
+                    <br />
+                    <span class="underline">Matt Posey</span>
+                  </li>
+                  <li>
+                    Editorial
+                    <br />
+                    <span class="underline"> PS260</span>
+                  </li>
+                  <li>
+                    Video Colorist
+                    <br />
+                    <span class="underline"> Tom Poole</span>
+                  </li>
+                  <li>
+                    Video Color Designer
+                    <br />
+                    <span class="underline"> Company 3</span>
+                  </li>
+                  <li>
+                    Digital Artwork
+                    <br />
+                    <span class="underline">Chris Dammeyer</span>
+                  </li>
+                  <li>
+                    Video
+                    <br />
+                    <span class="underline"> Vfx Mark Szumski </span>
+                  </li>
+                </ul>
+              </div>
+              <div id="tag-box" class="flex flex-col">
+                <p class="text-sm my-0 px-6">Tags</p>
+                <ul class="flex flex-wrap gap-3 my-1 px-6">
+                  <li class="text-sm py-2 px-6 border-2 border-black">Pop</li>
+                  <li class="text-sm py-2 px-6 border-2 border-black">
+                    PsyCedelic
+                  </li>
+                  <li class="text-sm py-2 px-6 border-2 border-black">
+                    Hip-pop
+                  </li>
+                  <li class="text-sm py-2 px-6 border-2 border-black">
+                    Whip-wop
+                  </li>
+                  <li class="text-sm py-2 px-6 border-2 border-black">
+                    Ship-Shop
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="py-16">
+              <iframe
+                class="w-full"
+                height="402"
+                src="https://www.youtube.com/embed/ZDyDpdFZHBo"
+                title="Metallica: Screaming Suicide (Official Music Video)"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

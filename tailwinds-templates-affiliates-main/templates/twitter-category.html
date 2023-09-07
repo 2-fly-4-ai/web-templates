@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../public/index.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav
+      class="bg-[#0969CB] border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img
+            src="https://dvn.dev/static/logos/dvn.dev-logo-white-optimized.png"
+            class="h-6 mr-3 sm:h-9"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <button
+          id="open-navbar"
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 -lg md:hidden hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="mx-2 text-white font-medium tracking-[2px]">OPEN</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="white"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 mt-4 border-gray-100 bg-[#0969CB] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#0969CB dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 px-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 md hover:underline md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 md hover:underline md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 md hover:underline md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 hover:underline uppercase md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 hover:underline md:hover:text-white md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <section class="bg-gray-50 ">
+      <div id="read-more-posts" class="mx-auto max-w-screen-md flex flex-1">
+        <div class=" mx-auto px-8 ">
+          <div class=" ">
+            <div class="h-96 my-8  justify-center bg-blue-300">
+              <div class="h-96 flex flex-col justify-center items-center text-2xl  w-20 mx-auto">
+                <img class="rounded-full" src="https://pbs.twimg.com/profile_images/1354489861898604546/jHJN8AU0_200x200.jpg" />
+                <span class="font-bold ">Revenue Platform</span>
+                <p class="text-sm font-base">@TwitterEng</p>
+              </div>
+              <ul class="py-8">
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+                <li class="py-8 border-b flex gap-6 flex-col">
+                  <div>
+                    <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                    <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                  </div>
+                  <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                  <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+                </li>
+              </ul>
+            </div>
+    </section>
+    
+  </body>
+  <script>
+    const button = document.getElementById("open-navbar");
+    const navbar = document.getElementById("navbar-default");
+
+    button.addEventListener("click", function () {
+      console.log("hello");
+      navbar.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", function (event) {
+      if (
+        !event.target.closest("#navbar-default") &&
+        !event.target.closest("#open-navbar") &&
+        navbar.classList.contains("hidden") === false
+      ) {
+        navbar.classList.add("hidden");
+      }
+    });
+  </script>
+</html>
+z

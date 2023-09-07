@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../public/index.css" />
+    <title>Blog</title>
+  </head>
+  </head>
+  <body>
+<header class="bg-sky-500">
+  <nav
+    class="border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 flex justify-start"
+  >
+    <div class="flex items-center mr-auto">
+      <div
+        class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+        id="mobile-menu-search"
+      >
+        <a href="https://flowbite.com" class="flex items-center mr-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-9 h-9 mr-2 rounded-full p-1 border-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"
+            />
+          </svg>
+
+          <span
+            class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"
+          >
+            DVN.Music
+          </span>
+        </a>
+        <ul
+          class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+        >
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Featured
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Charts
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Videos
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Promote your music
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 e lg:border-0 hover:text-gray-900 hover:underline lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <form class="flex items-center">
+      <label for="search-mobile" class="sr-only"> Search </label>
+      <div class="relative w-full">
+        <div
+          class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none"
+        >
+          <svg
+            class="w-5 h-5 text-gray-500 dark:text-gray-400"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </div>
+        <input
+          type="search"
+          id="search-mobile"
+          class="bg-gray-50 border-gray-300 text-gray-900 text-sm rounded-none focus:ring-primary-500 focus:border-primary-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+          placeholder="Search for anything..."
+          required
+        />
+      </div>
+    </form>
+  </nav>
+</header>
+
+
+<div
+  id="banner"
+  tabindex="-1"
+  class="flex gap-8 justify-between items-start py-3 px-6 w-full bg-black border-gray-200 sm:items-center dark:border-gray-700 lg:py-4 dark:bg-gray-800"
+>
+  <p class="text-sm font-light text-gray-200 dark:text-gray-400">
+    Supercharge your hiring by taking advantage of our
+    <a
+      class="font-medium underline text-primary-600 dark:text-primary-500 hover:no-underline"
+      href="#"
+    >
+      limited-time sale
+    </a>
+    for Designer Search + Job Board. Unlimited access to over 190K top-ranked
+    candidates and the #1 design job board. - Drop An advert Here to Make Bux
+  </p>
+  <button
+    data-collapse-toggle="banner"
+    type="button"
+    class="flex items-center text-gray-400 hover:bg-gray-200 hover:text-gray-900 rounded-none text-sm p-1.5 dark:hover:bg-gray-600 dark:hover:text-white"
+  >
+    <svg
+      class="w-5 h-5"
+      fill="currentColor"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  </button>
+</div>
+
+<div
+  id="hero"
+  class="flex bg-gradient-to-b from-blue-700 via-blue-800 to-black h-80"
+>
+  <div class="flex max-w-screen-lg w-full mx-auto px-6">
+    <div
+      class="w-72 h-72 -mb-12 my-auto rounded-full bg-cover bg-center bg-[url('https://assets.vogue.com/photos/5caf6f953be1bb2e378b9e46/16:9/w_1376,h_774,c_limit/00-promo-sza.jpg')]"
+    ></div>
+  </div>
+</div>
+
+
+<div id="artist_info_and_songs" class="mx-auto bg-gray-100">
+  <div
+    class="flex flex-col sm:flex-row sm: max-w-screen-lg mx-auto flex-basis-1"
+  >
+
+    <div class="mb-auto">
+      <div class="flex flex-col justify-center items-center h-full">
+        <div class="flex flex-col mt-16 justify-center items-center py-2 h-2/5">
+          <div class="flex gap-2">
+            <h1 class="text-4xl font-bold">SZA</h1>
+            <p class="bg-yellow-300 h-6 mt-auto mb-1 px-1 pb-2 font-medium">
+              5.972
+            </p>
+          </div>
+          <p class="font-medium text-black">
+            AKA: Solána Rowe, Solána Imani Rowe
+          </p>
+          <p class="whitespace-nowrap flex text-gray-400 font-medium">
+            <span>@The_Real_Sza |</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mx-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <a>Verified Artist</a>
+          </p>
+          <p class="underline font-medium text-green-300 cursor-pointer">
+            READ SZA VERIFIED ANNOTATIONS
+          </p>
+        </div>
+        <div class="flex flex-col">
+          <iframe
+            class="mx-auto w-full"
+            src="https://www.youtube.com/embed/NNd_ufPG3x4"
+            title="SZA - Nobody Gets Me (Official Video)"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="">
+          <p class="mx-6 my-3 text-sm font-medium">About SZA</p>
+          <div class="mx-4 p-2 prose">
+            <p>
+              SZA (pronounced /ˈsɪz·ə/) was born on November 8, 1989 in St.
+              Louis, Missouri as Solána Imani Rowe. Soon after, her family
+              relocated to Maplewood, New Jersey where she would grow up.
+            </p>
+
+            <p>
+              She is the honorary first lady of the powerhouse record label,
+              <a
+                href="https://genius.com/artists/Tde"
+                rel="noopener"
+                data-api_path="/artists/1108010"
+              >
+                Top Dawg Entertaiment
+              </a>
+              . She describes her genre of music as “glitter trap,” though it
+              fits most closely with R&amp;B.
+            </p>
+
+            <p>
+              SZA independently released her first EP,
+              <a
+                href="https://genius.com/albums/Sza/See-sza-run-ep"
+                rel="noopener"
+                data-api_path="/albums/33983"
+              >
+                <em>See.SZA.Run</em>
+              </a>
+              in 2012. She also independently released
+              <a
+                href="https://genius.com/albums/Sza/S"
+                rel="noopener"
+                data-api_path="/albums/31937"
+              >
+                <em>S</em>
+              </a>
+              , her second EP and first installment of the self titled
+              acronymous trilogy “SZA,” the following year.
+            </p>
+
+            <p>
+              <a
+                href="http://uk.complex.com/music/2013/09/who-is-sza/tde"
+                rel="noopener nofollow"
+              >
+                She signed to TDE after a chance encounter with Terrence “Punch”
+                Henderson,
+              </a>
+              co-founder of the label while selling merch at a
+              <a
+                href="https://genius.com/artists/Kendrick-lamar"
+                rel="noopener"
+                data-api_path="/artists/1421"
+              >
+                Kendrick Lamar
+              </a>
+              show. In 2014, she released her third EP,
+              <a
+                href="https://genius.com/albums/Sza/Z"
+                rel="noopener"
+                data-api_path="/albums/42662"
+              >
+                <em>Z</em>
+              </a>
+              , her first under TDE and the second installment of the “S-Z-A”
+              trilogy.
+            </p>
+
+            <p>
+              SZA is known to listeners of
+              <a
+                href="https://genius.com/artists/Isaiah-rashad"
+                rel="noopener"
+                data-api_path="/artists/22001"
+              >
+                Isaiah Rashad
+              </a>
+              , due to their collaborations on songs such as
+              <a
+                href="https://genius.com/Isaiah-rashad-ronnie-drake-lyrics"
+                rel="noopener"
+                data-api_path="/songs/251688"
+              >
+                “Ronnie Drake”
+              </a>
+              and
+              <a
+                href="https://genius.com/Isaiah-rashad-west-savannah-lyrics"
+                rel="noopener"
+                data-api_path="/songs/349173"
+              >
+                “West Savannah.”
+              </a>
+              She has also worked on several songs with her other label mates:
+              <a
+                href="https://genius.com/artists/Schoolboy-q"
+                rel="noopener"
+                data-api_path="/artists/11353"
+              >
+                ScHoolboy Q
+              </a>
+              ,
+              <a
+                href="https://genius.com/artists/jay-rock"
+                rel="noopener"
+                data-api_path="/artists/1403"
+              >
+                Jay Rock
+              </a>
+              , and
+              <a
+                href="https://genius.com/artists/Kendrick-lamar"
+                rel="noopener"
+                data-api_path="/artists/1421"
+              >
+                Kendrick Lamar
+              </a>
+              ,
+              <a
+                href="https://genius.com/artists/ab-soul"
+                rel="noopener"
+                data-api_path="/artists/2049"
+              >
+                Ab-Soul
+              </a>
+              .
+            </p>
+
+            <p>
+              On June 9, 2017, SZA released her debut solo album,
+              <em>Ctrl</em>, which features
+              <a
+                href="https://genius.com/artists/Kendrick-lamar"
+                rel="noopener"
+                data-api_path="/artists/1421"
+              >
+                Kendrick Lamar
+              </a>
+              ,
+              <a
+                href="https://genius.com/artists/Travis-scott"
+                rel="noopener"
+                data-api_path="/artists/20185"
+              >
+                Travis Scott
+              </a>
+              ,
+              <a
+                href="https://genius.com/artists/James-fauntleroy"
+                rel="noopener"
+                data-api_path="/artists/17649"
+              >
+                James Fauntleroy
+              </a>
+              , and
+              <a
+                href="https://genius.com/artists/Isaiah-rashad"
+                rel="noopener"
+                data-api_path="/artists/22001"
+              >
+                Isaiah Rashad
+              </a>
+              .
+              <a
+                href="https://www.grammy.com/grammys/artists/sza"
+                rel="noopener nofollow"
+              >
+                The album earned five Grammy nominations in 2018
+              </a>
+              for <em>Best New Artist</em>,
+              <em>Best Urban Contemporary Album</em>,
+              <em>Best R&amp;B Performance</em> 
+              <a
+                href="https://genius.com/Sza-the-weekend-lyrics"
+                rel="noopener"
+                data-api_path="/songs/3113598"
+              >
+                “The Weekend”
+              </a>
+              , <em>Best R&amp;B Song</em> 
+              <a
+                href="https://genius.com/Sza-supermodel-lyrics"
+                rel="noopener"
+                data-api_path="/songs/2884343"
+              >
+                “Supermodel”
+              </a>
+              , and <em>Best Rap/Sung Performance</em> 
+              <a
+                href="https://genius.com/Sza-love-galore-lyrics"
+                rel="noopener"
+                data-api_path="/songs/2920194"
+              >
+                “Love Galore”
+              </a>
+              .
+            </p>
+
+            <p>
+              In 2018, SZA collaborated with Kendrick Lamar on the
+              <a
+                href="https://genius.com/albums/Kendrick-lamar-the-weeknd-and-sza/Black-panther-the-album-music-from-and-inspired-by"
+                rel="noopener"
+                data-api_path="/albums/363114"
+              >
+                <em> Black Panther: The Album Music from and Inspired By </em>
+                
+              </a>
+              on the song
+              <a
+                href="https://genius.com/Kendrick-lamar-and-sza-all-the-stars-album-version-lyrics"
+                rel="noopener"
+                data-api_path="/songs/3494759"
+              >
+                “All The Stars”
+              </a>
+              which would end up peaking at #7 on Billboard. The song was
+              nominated for <em>Record of the Year</em>,
+              <em>Song of the Year</em>, <em>Best Rap/Sung Performance</em>, and
+              <em>Best Song Written for Visual Media</em> at the
+              <a
+                href="https://variety.com/2018/music/news/grammy-nominations-2019-complete-list-1203082934/"
+                rel="noopener nofollow"
+              >
+                Grammys in 2019
+              </a>
+              . The song was also nominated for the <em>Original Song</em>
+              category at the
+              <a
+                href="https://www.vox.com/2019/2/23/18222193/oscars-2019-nominees-full-list"
+                rel="noopener nofollow"
+              >
+                2019 Oscars
+              </a>
+              .
+            </p>
+
+            <p>
+              In 2021, SZA collaborated with Doja Cat on the song
+              <a
+                href="https://genius.com/Doja-cat-kiss-me-more-lyrics,%20which%20was%20the%20first%20single%20released%20from%20Doja%20Cat's%20album,%20%5BPlanet%20Her%5D%28https://genius.com/albums/Doja-cat/Planet-her"
+                rel="noopener"
+              >
+                “Kiss Me More,”
+              </a>
+              . The song was teased on March 5, 2021, and was released on April
+              9, 2021. The song ended up peaking at #3 on Billboard. The song
+              was nominated for <em>Record of the Year</em>,
+              <em>Song of the Year</em>, and won
+              <em>Best Pop Duo/Performance</em> at the
+              <a
+                href="https://www.cnn.com/2022/04/03/entertainment/grammy-winners-2022/index.html"
+                rel="noopener nofollow"
+              >
+                2022 Grammy Awards
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="w-full px-2">
+      <div>
+        <div
+          class="flex justify-center sm:justify-start mt-10 mb-4 font-medium text-gray-400"
+        >
+          POPULAR SZA SONGS
+        </div>
+
+     
+        <ul class="grid grid-cols-2 gap-2">
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+          <li class="flex bg-white hover:bg-gray-200 cursor-pointer">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+              <p class="font-medium text-sm mt-auto mb-1">3.4M</p>
+            </div>
+          </li>
+        </ul>
+
+       
+        <button
+          class="flex w-full h-12 justify-center items-center hover:bg-gray-200 bg-white mb-4 mt-1 font-medium text-gray-400"
+        >
+          Show all songs by SZA
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+  
+      <div
+        class="flex justify-center sm:justify-start mt-10 mb-4 font-medium text-gray-400"
+      >
+        POPULAR SZA ALBUMS
+      </div>
+      <div class="flex p-2 w-full bg-white justify-center items-center">
+        <ul class="flex flex-wrap gap-2 justify-center">
+          <li class="flex flex-col hover:bg-gray-200 p-1">
+            <img
+              class="w-48 h-48"
+              src="https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fabaac16a50bcb00a142b952ee3d87f6a.300x300x1.png"
+            />
+            <p class="text-center p-2 text-sm font-medium">
+              Kill Bill - Single
+              <br />
+              <span class="text-gray-400">2024</span>
+            </p>
+          </li>
+          <li class="flex flex-col hover:bg-gray-200 p-1">
+            <img
+              class="w-48 h-48"
+              src="https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fabaac16a50bcb00a142b952ee3d87f6a.300x300x1.png"
+            />
+            <p class="text-center p-2 text-sm font-medium">
+              Kill Bill - Single
+              <br />
+              <span class="text-gray-400">2024</span>
+            </p>
+          </li>
+          <li class="flex flex-col hover:bg-gray-200 p-1">
+            <img
+              class="w-48 h-48"
+              src="https://t2.genius.com/unsafe/150x150/https%3A%2F%2Fimages.genius.com%2Fabaac16a50bcb00a142b952ee3d87f6a.300x300x1.png"
+            />
+            <p class="text-center p-2 text-sm font-medium">
+              Kill Bill - Single
+              <br />
+              <span class="text-gray-400">2024</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      
+      <button
+        class="flex w-full h-12 justify-center items-center hover:bg-gray-200 bg-white mb-4 mt-1 font-medium text-gray-400"
+      >
+        Show all Albums by SZA
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+
+
+      <div class="flex p-5 my-0 w-full bg-white justify-center items-center">
+        <article>
+          <div class="flex bg-white">
+            <img
+              class="w-24 h-24"
+              src="https://t2.genius.com/unsafe/370x370/https%3A%2F%2Fimages.genius.com%2F2f9c7376080d8a38de104d6665c1ee29.800x800x1.png"
+            />
+            <div class="flex flex-col p-1">
+              <p class="text-lg font-medium m-0">Love Galore</p>
+              <p class="text-xs font-medium">SZA</p>
+            </div>
+          </div>
+          <p class="font-medium text-lg my-8">
+            <mark>
+              Done with these niggas, I don’t love these niggas I dust off these
+              niggas, do it for fun Don’t take it personal Personally, I’m
+              surprised you called me after the things I said
+            </mark>
+          </p>
+
+          <div class="flex items-center mb-4 space-x-4">
+            <div
+              class="bg-cover rounded-full w-10 h-10 border-2 border-green-400 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP_C-2VPIQBQ658iqr8o-s3mrou4Oma_IfE9GxXWcq8HSXwtjb5kZDw&s')]"
+            ></div>
+
+            <div class="flex flex-col font-medium dark:text-white">
+              <p class="text-green-400 flex items-center">
+                ARTIST
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="4"
+                  stroke="white"
+                  class="w-3 h-3 font-bold bg-green-400 mx-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M4.5 12.75l6 6 9-13.5"
+                  />
+                </svg>
+              </p>
+              <p>
+                SZA
+                <span class="mx-2">
+                  <mark>5,927</mark>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <p class="mb-2 text-gray-500 dark:text-gray-400">
+            This is my third Invicta Pro Diver. They are just fantastic value
+            for money. This one arrived yesterday and the first thing I did was
+            set the time, popped on an identical strap from another Invicta and
+            went in the shower with it to test the waterproofing.... No
+            problems.
+          </p>
+          <p class="mb-3 text-gray-500 dark:text-gray-400">
+            It is obviously not the same build quality as those very expensive
+            watches. But that is like comparing a Citroën to a Ferrari. This
+            watch was well under £100! An absolute bargain.
+          </p>
+
+          <aside>
+            <p
+              class="mt-1 text dark:text-gray-400 font-medium text-green-400 flex gap-1"
+            >
+              +19
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="gray"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+                  />
+                </svg>
+              </span>
+            </p>
+            <div
+              class="flex items-center mt-3 space-x-3 divide-x divide-gray-200 dark:divide-gray-600"
+            >
+              <a
+                href="#"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-xs px-2 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                Helpful
+              </a>
+              <a
+                href="#"
+                class="pl-4 text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+              >
+                Report abuse
+              </a>
+            </div>
+          </aside>
+        </article>
+      </div>
+
+      <button
+        class="flex w-full h-12 justify-center items-center hover:bg-gray-200 bg-white mb-4 mt-1 font-medium text-gray-400"
+      >
+        6 More Annotations By SZA
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 rotate-90"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+
+      <div
+        class="flex p-4 mt-6 mb-2 w-full bg-white justify-start items-center"
+      >
+        <article class="w-full">
+          <span class="underline font-medium flex my-2 h-96">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mx-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+            </svg>
+            What was the inspiration behind this song?
+          </span>
+
+          <div class="flex items-center mb-4 space-x-4">
+            <div
+              class="mb-auto bg-cover rounded-full w-20 h-20 border-2 border-green-400 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP_C-2VPIQBQ658iqr8o-s3mrou4Oma_IfE9GxXWcq8HSXwtjb5kZDw&s')]"
+            ></div>
+
+            <div class="w-96">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                <span class="font-medium">SZA: </span>
+                This is my third Invicta Pro Diver. They are just fantastic
+                value for money. This one arrived yesterday and the first thing
+                I did was set the time, popped on an identical strap from
+                another Invicta and went in the shower with it to test the
+                waterproofing.... No problems.
+              </p>
+            </div>
+          </div>
+
+          <aside>
+            <p
+              class="mt-1 text dark:text-gray-400 font-medium text-green-400 flex gap-1"
+            >
+              +19
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="gray"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+                  />
+                </svg>
+              </span>
+            </p>
+            <div
+              class="flex items-center mt-3 space-x-3 divide-x divide-gray-200 dark:divide-gray-600"
+            >
+              <a
+                href="#"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-xs px-2 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                Helpful
+              </a>
+              <a
+                href="#"
+                class="pl-4 text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+              >
+                Report abuse
+              </a>
+            </div>
+          </aside>
+        </article>
+      </div>
+
+      <div
+        class="flex p-4 mt-2 mb-2 w-full bg-white justify-start items-center"
+      >
+        <article class="w-full">
+          <span class="underline font-medium flex my-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mx-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+            </svg>
+            What was the inspiration behind this song?
+          </span>
+
+          <div class="flex items-center mb-4 space-x-4">
+            <div
+              class="mb-auto bg-cover rounded-full w-20 h-20 border-2 border-green-400 bg-[url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdP_C-2VPIQBQ658iqr8o-s3mrou4Oma_IfE9GxXWcq8HSXwtjb5kZDw&s')]"
+            />
+
+            <div class="w-96">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                <span class="font-medium">SZA: </span>
+                This is my third Invicta Pro Diver. They are just fantastic
+                value for money. This one arrived yesterday and the first thing
+                I did was set the time, popped on an identical strap from
+                another Invicta and went in the shower with it to test the
+                waterproofing.... No problems.
+              </p>
+            </div>
+          </div>
+
+          <aside>
+            <p
+              class="mt-1 text dark:text-gray-400 font-medium text-green-400 flex gap-1"
+            >
+              +19
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="gray"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+                  />
+                </svg>
+              </span>
+            </p>
+            <div
+              class="flex items-center mt-3 space-x-3 divide-x divide-gray-200 dark:divide-gray-600"
+            >
+              <a
+                href="#"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-xs px-2 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                Helpful
+              </a>
+              <a
+                href="#"
+                class="pl-4 text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+              >
+                Report abuse
+              </a>
+            </div>
+          </aside>
+        </article>
+      </div>
+
+      <div
+        class="flex p-4 mt-2 mb-2 w-full bg-white justify-start items-center"
+      >
+        <article class="w-full">
+          <span class="underline font-medium flex my-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 mx-1"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
+              />
+            </svg>
+            What was the inspiration behind this song?
+          </span>
+
+          <div class="flex items-center mb-4 space-x-4">
+         
+
+            <div class="w-96">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                <span class="font-medium">SZA: </span>
+                This is my third Invicta Pro Diver. They are just fantastic
+                value for money. This one arrived yesterday and the first thing
+                I did was set the time, popped on an identical strap from
+                another Invicta and went in the shower with it to test the
+                waterproofing.... No problems.
+              </p>
+            </div>
+          </div>
+
+          <aside>
+            <p
+              class="mt-1 text dark:text-gray-400 font-medium text-green-400 flex gap-1"
+            >
+              +19
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="gray"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z"
+                  />
+                </svg>
+              </span>
+            </p>
+            <div
+              class="flex items-center mt-3 space-x-3 divide-x divide-gray-200 dark:divide-gray-600"
+            >
+              <a
+                href="#"
+                class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium text-xs px-2 py-1.5 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+              >
+                Helpful
+              </a>
+              <a
+                href="#"
+                class="pl-4 text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+              >
+                Report abuse
+              </a>
+            </div>
+          </aside>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>

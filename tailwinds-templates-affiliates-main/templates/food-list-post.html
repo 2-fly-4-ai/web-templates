@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../public/index.css" />
+    <title>Blog</title>
+  </head>
+<body>
+    <header class="">
+        
+        <div class="">
+            <div class="shadow-3xl fixed top-0 w-full bg-white" id="nav-section">
+                <div class="flex justify-between items-center h-[70px] lg:h-auto lg:pt-[25px] px-0 lg:pb-[10px] lg:container">
+
+                    <button class="block lg:hidden w-[37px] h-[37px] border-2 rounded-[50%] border-black flex-none ml-3" id="menuButton2">
+                        <svg class="ml-[6px]" width="19" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 14">
+                            <g fill="#000" fill-rule="evenodd">
+                                <path d="M.406 2.33h18.588V.596H.406zM.406 7.962h18.588V6.23H.406zM.406 13.595h18.588v-1.733H.406z"></path>
+                            </g>
+                        </svg>
+                        
+                    </button>
+
+                    <div class="flex-shrink-0 w-[200px] lg:w-[420px]">
+                        <svg class="site-logo" width="100%" height="48" aria-label="Eat This, Not That Logo">
+                            <use xlink:href="#svg-etnt-logo"></use>
+                        </svg>
+                    </div>
+                    <form class="w-[60px] h-[85px] lg:h-auto pt-3 pl-2 lg:pt-0 lg:pl-0 lg:w-full bg-gray-400 lg:bg-transparent relative ml-0 lg:ml-[10%] " action="">
+                        <input type="text" class="hidden lg:block w-full bg-white border border-orange-500 rounded-[9px] pt-[14px] pr-[10px] pb-[15px] pl-[50px]">
+                        <button class="relative h-full lg:absolute top-0 left-0 bottom-0 w-[50px] pl-[5px]" type="button">
+                            <svg class="w-[27px] h-[27px] pl-[5px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                <path d="M17.337 15.053l-4.238-3.563c-.438-.39-.907-.57-1.286-.552a6.565 6.565 0 001.605-4.304C13.418 2.97 10.414 0 6.709 0 3.004 0 0 2.97 0 6.634c0 3.663 3.004 6.633 6.71 6.633a6.729 6.729 0 004.353-1.587c-.018.375.163.838.557 1.271l3.605 4.19c.617.678 1.625.736 2.24.127.615-.608.557-1.604-.128-2.215M6.71 11.056c-2.47 0-4.473-1.98-4.473-4.422 0-2.442 2.002-4.422 4.473-4.422 2.47 0 4.472 1.98 4.472 4.422 0 2.442-2.003 4.422-4.472 4.422" fill="#000" fill-rule="evenodd"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <nav class="container pt-[13px] px[15px] pb-[40px] mt-[95px]">
+                <div class="flex justify-between items-center">
+                    <button class="hidden lg:block w-[37px] h-[37px] border-2 rounded-[50%] border-black flex-none" id="menuButton">
+                        <svg class="ml-[6px]" width="19" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 14">
+                            <g fill="#000" fill-rule="evenodd">
+                                <path d="M.406 2.33h18.588V.596H.406zM.406 7.962h18.588V6.23H.406zM.406 13.595h18.588v-1.733H.406z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="hidden lg:block w-full pl-5 lg:pl-[40px] text-[15px]" id="menuOne">
+                        <ul class="flex flex-col lg:flex-row justify-between list-none w-full uppercase">
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">News</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Healthy Eating</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Groceries</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Weight Loss</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Restaurants</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Recipes</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Drinks</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">ETNT Health</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Mind + Body</a></li>
+                            <li class="text-xl font-black lg:text-[15px] lg:font-normal first:text-red-600 lg:first:text-black lg:text-gray-500  hover:text-red-600 lg:hover:text-gray-500"><a href="#">Celeb News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="mt-7 hidden leading-[28px] pb-5 shadow-4xl" id="menuTwo">
+                    <ul class="py-5 pl-5 text-xl font-black uppercase border-y-[3px] border-gray-300">
+                        <li class=""><a class="hover:text-red-600" href="#">Drink This, Not That!</a></li>
+                        <li class=""><a class="hover:text-red-600" href="#">Mind + Body</a></li>
+                        <li class=""><a class="hover:text-red-600" href="#">Celeb News</a></li>
+                        <li class=""><a class="hover:text-red-600" href="#">The Books</a></li>
+                        <li class=""><a class="hover:text-red-600" href="#">The Newsletter</a></li>
+                        <li class=""><a class="hover:text-red-600" href="#">The Podcast</a></li>
+                        <li class=""><a class="hover:text-red-600" href="#">Drinks</a></li>
+                    </ul>
+
+                    <ul class="py-5 pl-5 text-[18px] text-black font-normal">
+                        <li class=""><a class="" href="#">The Podcast</a></li>
+                        <li class=""><a class="" href="#">Drinks</a></li>
+                    </ul>
+
+                    <div class="flex pl-5 mt-4 lg:mt-0">
+                        <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-facebook-f text-[22px]"></i></a>
+                        <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-twitter text-[22px]"></i></a>
+                        <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-instagram text-[22px]"></i></a>
+                        <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-pinterest text-[22px]"></i></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <nav class="flex pl-0 lg:pl-[65px]" aria-label="Breadcrumb">
+                    <ol class="flex flex-wrap items-center space-x-1 md:space-x-3 text-[14px]">
+                        <li class="inline-flex items-center">
+                            <a href="#" class="inline-flex items-center font-medium text-black hover:border-b hover:border-black">
+                            Home
+                            </a>
+                        </li>
+                        <li>
+                            <div class="flex items-center">
+                            <span> / </span>
+                            <a href="#" class="ml-1 font-medium text-black hover:border-b hover:border-black">Groceries</a>
+                            </div>
+                        </li>
+                        <li aria-current="page">
+                            <div class="flex items-center">
+                            <span> / </span>
+                            <span class="ml-1 font-medium text-gray-500">6 Whole Foods Bakery Items Customers Are Currently Raving About</span>
+                            </div>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="mt-[30px]">
+       <section class="container">
+           <div class="pl-0 lg:pl-[65px]">
+                <div>
+                    <p><a class="text-red-600 text-sm hover:border-b hover:border-red-600" href="#">Groceries</a>
+                </div>
+                <div class="pt-3 ">
+                    <h2 class="text-[36px] font-black ">6 Whole Foods Bakery Items Customers Are Currently Raving About</h2>
+                </div>
+                <div class="pt-3">
+                    <h4 class="text-[16px] text-black">Desserts are a big specialty at the organic grocer.</h4>
+                </div>
+                <div class="pt-6">
+                    <div class="text-[12px] font-bold ">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-3 text-[12px]">
+                            <li class="inline-flex items-center">
+                                <p class="pr-2">By</p>
+                                <a href="#" class="inline-flex items-center text-black hover:border-b hover:border-black">
+                                    Olivia Bria
+                                </a>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                <span> / </span>
+                                <p class="pl-2 tracking-[3px]">
+                                    Published on January 29, 2023 | 11:00 AM
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                    <div class="pt-4 flex justify-between">
+                        <div class="w-full lg:w-[70%] mr-0 lg:mr-10 pb-10">
+                            <div class="w-full">
+                                <img class="w-full h-auto lg:h-[500px]" src="images/person-holding-whole-foods-brown-butter-butterscotch-pretzel-cookies.webp" alt="">
+                            </div>
+                            <div class="pt-3 font-medium text-gray-500 text-xs">
+                                <a href="#">Whole Foods / Facebook</a>
+                            </div>
+                            <div class="pt-6">
+                                <div class="text-base  font-normal leading-[28px] text-black space-y-3">
+                                    <p>Although best known for its many organic products, <a class="border-b-[5px] border-yellow-400 transition-all ease-in delay-150 hover:bg-yellow-400" href="#" target="_blank">Whole Foods</a>&nbsp;is also gaining a reputation for having one of the <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">best bakery departments</a> in the grocery business.</p>
+
+                                    <p>Desserts are a big specialty, particularly cakes such as the store's self-proclaimed "cult favorite" Berry Chantilly Cake, but also brownies, muffins, and cookies, too. "People ask for my cookie recipe all the time," one shopper recently commented on <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">Instagram</a>, "the secret is Whole Foods."</p>
+
+                                    <p>Everything baked in-house is made with unbleached flour and cage-free eggs, with no hydrogenated fats or high-fructose corn syrup, according to the company's <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">website.</a></p>
+
+                                    <p>If you're an Amazon Prime member, then you're eligible for daily deals on all sorts of baked goods, which are <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">advertised online.</a></p>
+
+                                    <p class="text-[18px] text-center"><span class="px-[20px]"><a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">RELATED: 5 Costco Bakery Items Customers Are Currently Raving About</a></span></p>
+
+                                    <div class="flex pt-8">
+                                        <div class="w-[37px] h-[37px] mr-3 border-[1px]  rounded-[50%] border-red-600 flex justify-center items-center flex-none">
+                                            <span>1</span>
+                                        </div>
+                                        <h2 class="text-[22px] sm:text-[36px] font-black leading-[36px] sm:leading-[50px]">Brown Butter Butterscotch Pretzel Cookies</h2>
+                                    </div>
+
+                                    <div class="w-full">
+                                        <img class="w-full" src="images/whole-foods-butterscotch-pretzel-brown-butter-cookies.webp" alt="">
+                                    </div>
+
+                                    <div class="pt-3 font-medium text-gray-500 text-xs">
+                                        <a href="#">Whole Foods</a>
+                                    </div>
+
+                                    <p>We firmly believe that any treat consisting of brown butter is the superior sweet. Whole Foods' <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">brown butter</a> butterscotch pretzel cookies look as divine as they sound. First <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">announced</a> on Twitter last January, the cookies garnered renewed attention last week via Instagram's <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">@wholefoodshype.</a> "Drooling," remarked one commenter. "[L]iterally sprinting to my Whole Foods tomorrow to try and snag these!!" wrote another. The cookies sell for $7.50 and come in a pack of four.</p>
+
+                                    <div class="flex pt-8">
+                                        <div class="w-[37px] h-[37px] mr-3 border-[1px]  rounded-[50%] border-red-600 flex justify-center items-center flex-none">
+                                            <span>2</span>
+                                        </div>
+                                        <h2 class="text-[22px] sm:text-[36px] font-black leading-[36px] sm:leading-[50px]">Berry Chantilly Cake</h2>
+                                    </div>
+
+                                    <div class="w-full">
+                                        <img class="w-full" src="images/whole-foods-berry-chantilly-cake.webp" alt="">
+                                    </div>
+
+                                    <div class="pt-3 font-medium text-gray-500 text-xs">
+                                        <a href="#">Whole Foods</a>
+                                    </div>
+
+                                    <p>The Berry Chantilly Cake has been branded a "cult favorite" for a reason, with its berry filling in between layers of vanilla cake and topped with whipped mascarpone. A recent <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">Reddit thread</a> about Whole Foods desserts is loaded with comments on the specialty cake, which users described as "delicious" and "amazing." One noted, "I came to this thread to ensure the Chantilly was mentioned. I typically hate cake…but the chantilly is the be[s]t."</p>
+
+                                    <div class="flex pt-8">
+                                        <div class="w-[37px] h-[37px] mr-3 border-[1px]  rounded-[50%] border-red-600 flex justify-center items-center flex-none">
+                                            <span>3</span>
+                                        </div>
+                                        <h2 class="text-[22px] sm:text-[36px] font-black leading-[36px] sm:leading-[50px]">Almond Croissants</h2>
+                                    </div>
+
+                                    <div class="w-full">
+                                        <img class="w-full" src="images/whole-foods-almond-croissant.webp" alt="">
+                                    </div>
+
+                                    <div class="pt-3 font-medium text-gray-500 text-xs">
+                                        <a href="#">Whole Foods</a>
+                                    </div>
+
+                                    <p>You just found your new favorite breakfast item. Instagram fan account <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">@wholefoodshype</a> recently spotted these almond croissants, priced at $8 for a package of four. "The almond filling is great and they're so flaky and delish!" Customer reviews on <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">Amazon</a> give it four stars out of five. One commenter wrote: "Very tasty flaky treat to wind down the day w/ tea! Keep extra in the freezer!</p>
+
+                                    <div class="flex pt-8">
+                                        <div class="w-[37px] h-[37px] mr-3 border-[1px]  rounded-[50%] border-red-600 flex justify-center items-center flex-none">
+                                            <span>4</span>
+                                        </div>
+                                        <h2 class="text-[22px] sm:text-[36px] font-black leading-[36px] sm:leading-[50px]">Salted Caramel Chocolate Cupcakes</h2>
+                                    </div>
+
+                                    <div class="w-full">
+                                        <img class="w-full" src="images/salted-caramel-chocolate-cupcakes.webp" alt="">
+                                    </div>
+
+                                    <div class="pt-3 font-medium text-gray-500 text-xs">
+                                        <a href="#">Shutterstock</a>
+                                    </div>
+
+                                    <p>Whole Foods offers a wide variety of cupcake flavors, as one <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">TikToker</a> recently found. One standout is the salted caramel chocolate cupcake, spotted recently for $4 a pop. It looks pretty decadent too, with a salted caramel buttercream and what appears to be some chocolate candy on top, drizzled with what one reasonably assumes to be caramel.</p>
+
+                                    <div class="flex pt-8">
+                                        <div class="w-[37px] h-[37px] mr-3 border-[1px]  rounded-[50%] border-red-600 flex justify-center items-center flex-none">
+                                            <span>5</span>
+                                        </div>
+                                        <h2 class="text-[22px] sm:text-[36px] font-black leading-[36px] sm:leading-[50px]">Tres Leche Cake</h2>
+                                    </div>
+
+                                    <div class="w-full">
+                                        <img class="w-full" src="images/whole-foods-tres-leches-cake.webp" alt="">
+                                    </div>
+
+                                    <div class="pt-3 font-medium text-gray-500 text-xs">
+                                        <a href="#">Whole Foods</a>
+                                    </div>
+
+                                    <p>The Tres Leche Cake has been a long-standing cart filler for Whole Foods shoppers. <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">Amazon reviews</a> describe the spongey cake as "perfect," "light," and "flavorful." Depending on your motivation, you can grab a <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">single slice</a> for around $4 or a <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">family version</a> of the dessert for $13.99.</p>
+
+                                    <div class="flex pt-8">
+                                        <div class="w-[37px] h-[37px] mr-3 border-[1px]  rounded-[50%] border-red-600 flex justify-center items-center flex-none">
+                                            <span>6</span>
+                                        </div>
+                                        <h2 class="text-[22px] sm:text-[36px] font-black leading-[36px] sm:leading-[50px]">Vegan Chocolate Raspberry Donuts</h2>
+                                    </div>
+
+                                    <div class="w-full">
+                                        <img class="w-full" src="images/whole-foods-chocolate-raspberry-donuts.webp" alt="">
+                                    </div>
+
+                                    <div class="pt-3 font-medium text-gray-500 text-xs">
+                                        <a href="#">Whole Foods</a>
+                                    </div>
+
+                                    <p>For the vegans out there, many Whole Foods locations offer doughnuts made with palm oil shortening instead of butter. The chocolate raspberry variety has been a fan favorite since they were first spotted on <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">Instagram</a> in December 2022. The rounds are currently sold as <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">singles</a> ($2.25) or a <a class="border-b-[5px] border-yellow-400 hover:bg-yellow-400" href="#" target="_blank">six-pack</a> ($8.99) on the store's website. We recommend checking with your local Whole Foods to confirm that it carries them.</p>
+
+                                </div>
+                                
+                            </div>
+
+                            <div class="w-full flex justify-center items-center border-[1px] border-black my-10">
+                                <div class="w-full py-6 px-12 flex flex-col items-center space-y-3">
+                                    <a class="" href="">
+                                        <img class="w-[112px]" src="images/etnt-logo.png" alt="">
+                                    </a>
+                                    
+                                    <h3 class="text-[20px] font-black">Sign up for our newsletter!</h3>
+                                    <div class="w-full flex">
+                                        <input class="w-[100%] lg:w-[420px] bg-white border border-black rounded-none py-[12px] px-[16px]" type="text" placeholder="Enter your e-mail address">
+                                        <button class="flex-none ml-2 inline-flex items-center py-[12px] px-[32px] border-[1px] border-red-600 bg-red-600 text-white transition-all uppercase hover:text-red-600 hover:bg-transparent" type="button">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="py-5 font-medium text-gray-500 text-sm border-y-[3px] border-gray-300">
+                                <p class="text-black">Olivia Bria</p>
+                                <p>Olivia has a bachelor’s degree in communications and political science from the University of Connecticut. She is a foodie, traveler, journalist, and celebrity interviewer. <a class="italic hover:border-b-[1px] hover:border-black" href="#"> Read more about Olivia</a></p>
+                            </div>
+
+                            <div class="py-5 font-medium text-gray-500 text-[20px] border-b-[3px] border-gray-300">
+                                <p class="text-red-600">FILED UNDER</p>
+                                <ol class="flex flex-wrap items-center space-x-1 md:space-x-3 text-[16px] uppercase pt-2">
+                                    <li class="inline-flex items-center">
+                                        <a href="#" class="inline-flex items-center text-gray-500 hover:border-b hover:border-black">
+                                            Dessert
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                        <span> // </span>
+                                        <a href="#" class="inline-flex items-center text-gray-500 hover:border-b hover:border-black pl-2">
+                                            Groceries
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                        <span> // </span>
+                                        <a href="#" class="inline-flex items-center text-gray-500 hover:border-b hover:border-black pl-2">
+                                            News
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="flex items-center">
+                                        <span> // </span>
+                                        <a href="#" class="inline-flex items-center text-gray-500 hover:border-b hover:border-black pl-2">
+                                            Product Round-Ups
+                                        </a>
+                                    </li>
+                                </ol>
+                            </div>
+
+                        </div>
+                        <div class="hidden lg:flex flex-col w-[30%] mt-[30px] text-black">
+                            <div class="py-5 relative before:content-none lg:before:content-[''] before:block before:h-[2px] before:w-full before:absolute before:top-[0px] before:left-[0px] before:bg-gray-300">
+                                <h4 class="text-xl font-black uppercase">More in Mind + Body</h4>
+                            </div>
+                            <a class="flex items-center mb-5" href="#">
+                                <div class="w-[134px] flex-none">
+                                    <img class="w-full" src="images/senior-man-dumbbell-squats.webp" alt="">
+                                </div>
+                                <div class="grow pl-4 text-[14px] font-black">
+                                    <h3>The Best Leg-Strengthening Exercises for Seniors</h3>
+                                </div>
+                            </a>
+                            <a class="flex items-center mb-5" href="#">
+                                <div class="w-[134px] flex-none">
+                                    <img class="w-full" class="w-full" src="images/fitness-man-holding-kettlebell.webp" alt="">
+                                </div>
+                                <div class="grow pl-4 text-[14px] font-black">
+                                    <h3>4 Kettlebell Exercises To Get Rid of ‘Moobs’ as You Age</h3>
+                                </div>
+                            </a>
+                            <a class="flex items-center mb-5" href="#">
+                                <div class="w-[134px] flex-none">
+                                    <img class="w-full" src="images/fitness-man-bicep-hammer-curls.webp" alt="">
+                                </div>
+                                <div class="grow pl-4 text-[14px] font-black">
+                                    <h3>6 Best Exercises for Men To Get Bigger Arms</h3>
+                                </div>
+                            </a>
+                            <a class="flex items-center mb-5" href="#">
+                                <div class="w-[134px] flex-none">
+                                    <img class="w-full" src="images/man-barbell-lifts-gym.webp" alt="">
+                                </div>
+                                <div class="grow pl-4 text-[14px] font-black">
+                                    <h3>What Are Drop Sets? Plus, How To Use Them To Boost Your Workouts</h3>
+                                </div>
+                            </a>
+                            <a class="flex items-center mb-5" href="#">
+                                <div class="w-[134px] flex-none">
+                                    <img src="images/woman-dumbbell-lunges-1.webp" alt="">
+                                </div>
+                                <div class="grow pl-4 text-[14px] font-black">
+                                    <h3>Sculpt Lean Muscle With This 30-Day Total-Body Workout</h3>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+           </div>
+           
+       </section>
+    </main>
+
+    <footer class="bg-gray-100 text-gray-600 pb-12">
+        <div>
+            <div class="flex flex-col md:flex-row container pt-5">
+                <div class="w-12/12 md:w-6/12 relative after:content-none lg:after:content-[''] after:block after:h-[65%] after:w-[2px] after:absolute after:top-[80px] after:right-[0px] after:bg-black">
+                    <div class="flex flex-col lg:flex-row justify-between lg:pr-6 xl:pr-12">
+                        <svg class="site-logo" width="240" height="34" aria-label="Eat This, Not That Logo">
+                            <use xlink:href="#svg-etnt-logo"></use>
+                        </svg>
+                        <div class="flex mt-4 lg:mt-0">
+                            <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-facebook-f text-[22px]"></i></a>
+                            <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-twitter text-[22px]"></i></a>
+                            <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-instagram text-[22px]"></i></a>
+                            <a href="#" class="w-[37px] h-[37px] mr-3 border-[1px] rounded-[50%] border-gray-600 flex justify-center items-center flex-none"><i class="fa-brands fa-pinterest text-[22px]"></i></a>
+                        </div>
+                    </div>
+                    <div class="flex justify-between pt-12 pb-0 md:py-12 uppercase">
+                        <ul class="space-y-4 w-12/12 md:w-6/12 pb-12 sm:pb-0">
+                            <li>
+                                <a href="#">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#">About ETNT Health</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Medical Expert Board</a>
+                            </li>
+                            <li>
+                                <a href="#">Partner Sites</a>
+                            </li>
+                            <li>
+                                <a href="#">Sitemap</a>
+                            </li>
+                        </ul>
+                        <ul class="space-y-4 w-12/12 sm:w-6/12 pb-12 sm:pb-0">
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Terms and Conditions</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>        
+                <div class="w-full md:w-6/12 pl-0 md:pl-[100px] space-y-10">
+                    <h3 class="text-[24px] font-black">Subscribe to our daily newsletter</h3>
+                    <h6 class="text-[24px] font-semibold">Get the best food tips and diet advice every day.</h6>
+                    <div class="w-full space-y-10">
+                        <input class="w-full lg:w-[420px] bg-transparent border-black border-b-[3px] py-[12px] px-[16px]" type="text" placeholder="ENTER YOUR EMAIL">
+                        <button class="inline-flex items-center py-[12px] px-[32px] border-[1px] border-red-600 bg-red-600 text-white transition-all uppercase hover:text-red-600 hover:bg-transparent" type="button">Sign Up</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="container mt-5 md:mt-0">
+            <div>
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 830 101" xml:space="preserve"><defs><path id="SVGID_1_" d="M3 3.89h826.79v97.5H3z"/></defs><clipPath id="SVGID_2_"><use xlink:href="#SVGID_1_" overflow="visible"/></clipPath><path d="M768.29 76.52V28.23h12.43c13.09 0 21.33 8.9 21.33 24.34 0 15.83-8.77 23.95-21.33 23.95h-12.43zm-27.36 22.64h42.01c29.05 0 46.85-16.75 46.85-46.59 0-29.71-18.71-46.98-45.67-46.98h-43.19v93.57zm-84.14 0h74.2V75.74h-46.85V61.08h38.08V40.53h-38.08V27.84h45.54V5.59h-72.89v93.57zm-90.82 0h81.27V75.74h-35.73c-5.76 0-10.99.52-10.99.52v-.39s5.23-4.84 9.55-9.81l34.68-39.91V5.59h-75.38v23.43h30.1c4.19 0 8.9-.52 8.9-.52v.39s-4.32 3.93-7.46 7.59l-34.94 40.18v22.5z" clip-path="url(#SVGID_2_)" fill="#231f20"/><path d="M529.85 99.16h25.52v-25h-25.52v25zm6.16-33.76h13.22l6.15-36.12V5.59h-25.52v23.69l6.15 36.12z" fill="#ee3b2d"/><defs><path id="SVGID_3_" d="M3 3.89h826.79v97.5H3z"/></defs><clipPath id="SVGID_4_"><use xlink:href="#SVGID_3_" overflow="visible"/></clipPath><path d="M435.37 99.16h26.43v-53h.26l29.71 53h28.27V5.59h-26.43V58.2h-.26L462.72 5.59h-27.35v93.57zm-59.54-50.91c1.57-4.58 3.53-12.04 3.53-12.04h.26s2.09 7.46 3.53 12.04l5.89 18.32h-19.37l6.16-18.32zm-44.1 50.91h27.22l4.58-13.74h31.67l4.58 13.74h29.05L394.15 5.59h-27.87l-34.55 93.57zm-42.66 0h30.62l30.1-93.57h-27.74l-12.56 43.97c-2.22 7.98-4.58 18.19-4.58 18.19h-.26s-2.22-10.21-4.58-18.19L287.23 5.59H259.1l29.97 93.57zm-84.67 0h67.4V75.74h-40.04V5.59H204.4v93.57zm-59.54-50.91c1.57-4.58 3.53-12.04 3.53-12.04h.26s2.09 7.46 3.53 12.04l5.89 18.32H138.7l6.16-18.32zm-44.1 50.91h27.22l4.58-13.74h31.67l4.58 13.74h29.05L163.18 5.59H135.3l-34.54 93.57zm-24.74 0h18.19V48.38h-38.6v19.37h12.43c-1.7 6.28-6.54 11.65-16.49 11.65-13.22 0-20.81-11.39-20.81-26.7s6.67-26.3 19.76-26.3c8.38 0 14 4.97 15.44 10.99h26.43c-3.01-20.81-18.45-33.5-42.92-33.5C20.54 3.89 3 25.09 3 52.7c0 14.53 4.32 27.09 12.96 36.25 7.59 8.11 18.32 12.43 30.88 12.43 11.39 0 20.94-3.66 26.83-12.17h.26l2.09 9.95z" clip-path="url(#SVGID_4_)" fill="#231f20"/></svg>
+                
+            </div>
+            <div class="text-[16px] leading-[28px] pt-3">
+                <p>© 2022 <a href="#">GALVANIZED MEDIA.</a> ALL RIGHTS RESERVED. <br /> EATTHIS.COM IS PART OF THE ALLRECIPES FOOD GROUP</p>
+            </div>
+        </div>
+        
+        
+              
+    </footer>
+
+    <svg id="svg-source" style="display: none;" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg">
+        <symbol id="svg-etnt-logo" viewBox="0 0 650.55 73.97"
+                preserveAspectRatio="xMidYMid meet">
+            <path
+                d="M312.16 2.68h11.14a1.84 1.84 0 011.15.82q9.26 13.13 18.47 26.27c.56.8 1.14 1.59 1.92 2.68V2.76h15v59.35c-3 0-5.93-.13-8.87 0a4.33 4.33 0 01-4.34-2.22c-6.07-8.87-12.3-17.63-18.48-26.42-.22-.31-.46-.6-.87-1.13V62h-15.12zM38.11 62.08H0V2.74h37.63V16.8H15.25v8.31h20.26v14h-20.3v8.74h22.9zM178.17 2.72h14v20.8c.22-.06.35-.06.4-.12 4.35-4.91 9.89-5.79 15.87-4.31s9.11 5.64 10.45 11.34a27.24 27.24 0 01.71 6c.08 8.23 0 16.46 0 24.68V62h-14v-1.38-21.21a14.73 14.73 0 00-.17-2.74 5.54 5.54 0 00-5.1-4.78c-3.54-.36-6.21.85-7.25 3.59a13.31 13.31 0 00-.76 4.43c-.08 6.91 0 13.82 0 20.73V62h-14zM496.55 2.73h14v20.9a3.2 3.2 0 00.49-.33 15.27 15.27 0 0125.78 5.7 21.15 21.15 0 011.08 6.1c.13 8.78.08 17.57.08 26.35a5.27 5.27 0 01-.05.64h-14v-1.48V39.4a14.68 14.68 0 00-.17-2.74 5.54 5.54 0 00-5.11-4.77c-3.54-.36-6.21.85-7.24 3.6a13.11 13.11 0 00-.75 4.44c-.08 6.9 0 13.81 0 20.72V62h-14zM73.47 23v-3.23h14V62h-14v-3.56a2.82 2.82 0 00-.49.28c-3.73 3.92-8.45 5.06-13.59 4.45-8.73-1-15.11-6.91-17.21-16-1.9-8.23-.61-15.91 5.11-22.43A18.59 18.59 0 0168 19.7a40.22 40.22 0 015.47 3.3zM55.53 40.9a27.47 27.47 0 00.57 3.16c1.21 4.15 5 6.54 9.54 6a8.58 8.58 0 007.81-8.41c.29-5-2.33-8.84-6.61-9.79-6.23-1.34-11.19 2.63-11.31 9.04zM573.47 23v-3.22h14.06v42.28h-14v-3.61a2.74 2.74 0 00-.49.26c-3.72 3.93-8.44 5.07-13.59 4.47-8.73-1-15.12-6.91-17.22-16-1.9-8.23-.62-15.91 5.1-22.43A18.6 18.6 0 01568 19.69a41.79 41.79 0 015.47 3.31zm-17.93 17.86a29.78 29.78 0 00.55 3.16 8.9 8.9 0 0017.36-2.3c.3-4.61-1.91-8.29-5.76-9.58-6.3-2.14-12.01 2.01-12.15 8.72zM364.63 40.88a22.68 22.68 0 1122.62 22.43 22.31 22.31 0 01-22.62-22.43zm22.72-8.79c-5 0-8.52 3.59-8.52 8.79s3.44 8.78 8.38 8.82 8.68-3.61 8.69-8.79-3.54-8.8-8.55-8.82zM160.13 17.29V62H145V17.39h-14.68V2.75h44.41v14.54zM493.12 2.75V17.3h-14.57V62h-15.19V17.38H448.7V2.75zM242.47 53.2l12.27-6.2c.88 2.23 2.21 4 4.61 4.37a15.53 15.53 0 004.25-.06 1.79 1.79 0 001.59-1.71 1.69 1.69 0 00-1.28-1.81c-1.53-.57-3.1-1-4.66-1.52-2.38-.77-4.83-1.4-7.14-2.37-4.27-1.79-7.11-4.87-7.54-9.67-.47-5.2 1.24-9.54 5.66-12.54s9.22-3.6 14.33-3.05c6.2.66 11.06 3.43 14.15 9 .09.17.17.36.33.68l-11.8 5.32c-.31-.47-.58-.9-.89-1.31a5.38 5.38 0 00-5.92-2.12 1.94 1.94 0 00-1.65 1.67 1.67 1.67 0 001.32 1.79c2.12.67 4.3 1.18 6.43 1.84s4.2 1.27 6.21 2.12c9.51 4.07 9 17.65 1.51 22.31a22.22 22.22 0 01-10.16 3.23 27.54 27.54 0 01-13.29-1.8 15.81 15.81 0 01-8.33-8.17zM92.91 19.68h6.2v-7.63l14.17-4.27v11.86H122v13.47h-8.76v11.94c0 2.93 1.13 4.17 4.06 4.35 1.55.09 3.1 0 4.72 0v12.9c-3 .07-5.93.19-8.9.18a16.56 16.56 0 01-3.52-.48c-5.78-1.26-9-4.67-9.94-10.54a51.46 51.46 0 01-.48-6.8c-.07-3.79 0-7.58 0-11.49h-6.27z"/>
+            <path
+                d="M431.67 7.78v11.87h8.76v13.47h-8.77V45.06c0 2.92 1.13 4.17 4.07 4.34 1.54.09 3.09 0 4.71 0v12.9c-3 .07-5.95.19-8.92.18A17.11 17.11 0 01428 62c-5.78-1.26-9.05-4.68-9.94-10.55a53.21 53.21 0 01-.48-6.8c-.07-3.78 0-7.57 0-11.49h-6.25V19.71h6.21v-7.66zM592 19.68h6.19v-7.63l14.18-4.27v11.86h8.76v13.47h-8.76V45.05c0 2.93 1.13 4.17 4.06 4.35 1.55.09 3.1 0 4.72 0v12.9c-3 .07-5.93.19-8.9.18a16.56 16.56 0 01-3.56-.47c-5.78-1.26-9-4.67-9.94-10.54a49.81 49.81 0 01-.48-6.8c-.08-3.79 0-7.58 0-11.49H592zM239.13 62.07h-13.95V19.75h13.95z"/>
+            <path
+                d="M650.54 12.8a12 12 0 01-2.54 7.38c-1.34 1.84-2.8 3.59-4.2 5.38a23.33 23.33 0 00-4.8 10.31c-.05.31-.36.58-.55.86a2.76 2.76 0 01-.47-.83 24.76 24.76 0 00-5.51-11.39c-1.28-1.59-2.55-3.18-3.69-4.87a12.75 12.75 0 01-1.89-10.29A10.83 10.83 0 01637.44.59a17.48 17.48 0 015.76.74c4.66 1.47 7.34 5.67 7.34 11.47z"
+                fill="#fe0101"/>
+            <path
+                d="M299.58 47.32c-2.41 9-4.77 17.82-7.13 26.65h-11.37c.26-2.35.49-4.63.75-6.92.68-6.15 1.39-12.29 2-18.45.1-.91.3-1.31 1.33-1.3 4.75.06 9.46.02 14.42.02z"/>
+            <path d="M638.41 63.3a9.92 9.92 0 119.89-9.93 9.91 9.91 0 01-9.89 9.93z"
+                fill="#fe0101"/>
+            <path d="M240.27 8a8.14 8.14 0 01-16.28.1 8.14 8.14 0 0116.28-.1z"/>
+        </symbol>
+    </svg>
+    
+
+    <script>
+
+        const menuButton = document.querySelector('#menuButton');
+        const menuButton2 = document.querySelector('#menuButton2');
+        const menu1 = document.querySelector('#menuOne');
+        const menu2 = document.querySelector('#menuTwo');
+
+
+        menuButton.addEventListener('click', () => {
+            menu1.classList.toggle('hidden');
+            menu2.classList.toggle('hidden');
+        });
+        menuButton2.addEventListener('click', () => {
+            menu1.classList.toggle('hidden');
+            menu2.classList.toggle('hidden');
+        });
+
+        
+        
+    </script>
+</body>
+</html>

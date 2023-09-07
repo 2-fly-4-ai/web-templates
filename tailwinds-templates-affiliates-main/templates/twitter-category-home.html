@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./../public/index.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <nav
+      class="bg-[#0969CB] border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900"
+    >
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto"
+      >
+        <a href="https://flowbite.com/" class="flex items-center">
+          <img
+            src="https://dvn.dev/static/logos/dvn.dev-logo-white-optimized.png"
+            class="h-6 mr-3 sm:h-9"
+            alt="Flowbite Logo"
+          />
+        </a>
+        <button
+          id="open-navbar"
+          data-collapse-toggle="navbar-default"
+          type="button"
+          class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 -lg md:hidden hover:bg-blue-900 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="mx-2 text-white font-medium tracking-[2px]">OPEN</span>
+          <svg
+            class="w-6 h-6"
+            aria-hidden="true"
+            fill="white"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 mt-4 border-gray-100 bg-[#0969CB] md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-[#0969CB dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li class="">
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 border px-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 md hover:underline md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 md hover:underline md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 uppercase md:hover:bg-transparent md:border-0 md hover:underline md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 hover:underline uppercase md:hover:bg-transparent md:border-0 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 font-medium pl-3 pr-4 text-white hover:bg-gray-900 underline-offset-8 decoration-4 hover:underline uppercase md:hover:bg-transparent md:border-0 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </body>
+
+  <section class="bg-[#10347C] dark:bg-gray-900">
+    <div
+      class="flex max-w-screen-xl mx-auto px-4 py-8  justify-center lg:gap-12 xl:gap-0 lg:py-16 lg:grid-cols-12"
+    >
+      <div class="m-auto place-self-center lg:col-span-7 xl:col-span-8 ">
+        <h1
+          class="max-w-2xl mb-4 text-4xl text-gray-100 font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white"
+        >
+          What can we help you find?
+        </h1>
+        <p
+          class="max-w-2xl mb-6 font-base text-gray-400 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400"
+        >
+          Here at flowbite we focus on markets where technology, innovation, and
+          capital can unlock long-term value and drive economic growth.
+        </p>
+        <form action="#" class="">
+          <div class="flex items-center mb-3">
+            <div class="relative border flex w-full mr-3">
+              <label
+                for="member_email"
+                class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Email address</label
+              >
+              <div
+                class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+              >
+                
+              </div>
+              <input
+                class="flex w-full p-3 text-sm text-gray-900 border border-gray-300 bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                placeholder="Search"
+                type="email"
+                name="member[email]"
+                id="member_email"
+                required=""
+              />
+              <div class="hover:bg-blue-500 p-2 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-8 h-8 m-auto cursor-pointer ">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg></div>
+              
+            </div>
+          </div>
+          <div class="text-sm text-left text-gray-400 dark:text-gray-300">
+            Instant signup. No credit card required.
+            <a
+              href="#"
+              class="text-primary-600 hover:underline dark:text-primary-500"
+              >Terms of Service</a
+            >
+            and
+            <a
+              class="text-primary-600 hover:underline dark:text-primary-500"
+              href="#"
+              >Privacy Policy</a
+            >.
+          </div>
+        </form>
+      </div>
+      <div class=" lg:mt-0 lg:col-span-5 xl:col-span-4 lg:flex">
+        <img
+          src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mobile-app.svg"
+          alt="phone illustration"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+        <p class="mb-5 font-base text-gray-500 sm:text-xl dark:text-gray-400">
+          Here at Flowbite we focus on markets where technology, innovation, and
+          capital can unlock long-term value and drive economic growth.
+        </p>
+      </div>
+      <div class="space-y-8 lg:grid lg:grid-cols-2 xl:gap-14 lg:space-y-0">
+        <!-- Pricing Card -->
+
+        <!-- Pricing Card -->
+        <div
+          class="flex flex-col mx-auto w-full text-center text-gray-900 bg-white rounded-none border border-gray-100 shadow dark:border-gray-600 xl:p-0 dark:bg-gray-800 dark:text-white"
+        >
+          <h3 class="text-2xl flex my-4 font-bold mx-auto text-gray-500">
+            Some Headline Here
+          </h3>
+          <ul>
+            <li
+              class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+            ><a href="">
+              Relevant for multiple users, extended & premium support.
+            </a>
+            </li>
+          
+            <li
+            class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+          ><a href="">
+            Relevant for multiple users, extended & premium support.
+          </a>
+          </li>
+          <li
+          class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+        ><a href="">
+          Relevant for multiple users, extended & premium support.
+        </a>
+        </li>
+        <li
+        class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+      ><a href="">
+        Relevant for multiple users, extended & premium support.
+      </a>
+      </li>
+      <li
+      class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+    ><a href="">
+      Relevant for multiple users, extended & premium support.
+    </a>
+    </li>
+    <li
+    class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+  ><a href="">
+    Relevant for multiple users, extended & premium support.
+  </a>
+  </li>
+          </ul>
+
+          <!-- List -->
+
+          <a
+            href="#"
+            class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-none text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+            >Get started</a
+          >
+        </div>
+        <div
+        class="flex flex-col mx-auto w-full text-center text-gray-900 bg-white rounded-none border border-gray-100 shadow dark:border-gray-600 xl:p-0 dark:bg-gray-800 dark:text-white"
+      >
+        <h3 class="text-2xl flex my-4 font-bold mx-auto text-gray-500">
+          Some Headline Here
+        </h3>
+        <ul>
+          <li
+            class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+          ><a href="">
+            Relevant for multiple users, extended & premium support.
+          </a>
+          </li>
+        
+          <li
+          class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+        ><a href="">
+          Relevant for multiple users, extended & premium support.
+        </a>
+        </li>
+        <li
+        class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+      ><a href="">
+        Relevant for multiple users, extended & premium support.
+      </a>
+      </li>
+      <li
+      class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+    ><a href="">
+      Relevant for multiple users, extended & premium support.
+    </a>
+    </li>
+    <li
+    class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+  ><a href="">
+    Relevant for multiple users, extended & premium support.
+  </a>
+  </li>
+  <li
+  class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+><a href="">
+  Relevant for multiple users, extended & premium support.
+</a>
+</li>
+        </ul>
+
+        <!-- List -->
+
+        <a
+          href="#"
+          class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-none text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+          >Get started</a
+        >
+      </div>
+      <div
+      class="flex flex-col mx-auto w-full text-center text-gray-900 bg-white rounded-none border border-gray-100 shadow dark:border-gray-600 xl:p-0 dark:bg-gray-800 dark:text-white"
+    >
+      <h3 class="text-2xl flex my-4 font-bold mx-auto text-gray-500">
+        Some Headline Here
+      </h3>
+      <ul>
+        <li
+          class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+        ><a href="">
+          Relevant for multiple users, extended & premium support.
+        </a>
+        </li>
+      
+        <li
+        class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+      ><a href="">
+        Relevant for multiple users, extended & premium support.
+      </a>
+      </li>
+      <li
+      class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+    ><a href="">
+      Relevant for multiple users, extended & premium support.
+    </a>
+    </li>
+    <li
+    class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+  ><a href="">
+    Relevant for multiple users, extended & premium support.
+  </a>
+  </li>
+  <li
+  class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+><a href="">
+  Relevant for multiple users, extended & premium support.
+</a>
+</li>
+<li
+class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+><a href="">
+Relevant for multiple users, extended & premium support.
+</a>
+</li>
+      </ul>
+
+      <!-- List -->
+
+      <a
+        href="#"
+        class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-none text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+        >Get started</a
+      >
+    </div>
+    <div
+    class="flex flex-col mx-auto w-full text-center text-gray-900 bg-white rounded-none border border-gray-100 shadow dark:border-gray-600 xl:p-0 dark:bg-gray-800 dark:text-white"
+  >
+    <h3 class="text-2xl flex my-4 font-bold mx-auto text-gray-500">
+      Some Headline Here
+    </h3>
+    <ul>
+      <li
+        class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+      ><a href="">
+        Relevant for multiple users, extended & premium support.
+      </a>
+      </li>
+    
+      <li
+      class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+    ><a href="">
+      Relevant for multiple users, extended & premium support.
+    </a>
+    </li>
+    <li
+    class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+  ><a href="">
+    Relevant for multiple users, extended & premium support.
+  </a>
+  </li>
+  <li
+  class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+><a href="">
+  Relevant for multiple users, extended & premium support.
+</a>
+</li>
+<li
+class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+><a href="">
+Relevant for multiple users, extended & premium support.
+</a>
+</li>
+<li
+class="py-6 border-t font-base text-gray-500 sm:text-lg dark:text-gray-400"
+><a href="">
+Relevant for multiple users, extended & premium support.
+</a>
+</li>
+    </ul>
+
+    <!-- List -->
+
+    <a
+      href="#"
+      class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-200 font-medium rounded-none text-sm px-5 py-2.5 text-center dark:text-white dark:focus:ring-primary-900"
+      >Get started</a
+    >
+  </div>
+        <!-- Pricing Card -->
+    
+        <!-- Pricing Card -->
+      </div>
+
+      <aside
+        aria-label="Related articles"
+        class="py-8 lg:py-24 bg-white dark:bg-gray-900"
+      >
+        <div class="px-0 mx-auto max-w-screen-xl">
+          <h2 class="mb-8 text-2xl font-bold text-gray-500 dark:text-white">
+            Related articles
+          </h2>
+          <div class="grid gap-12 sm:grid-cols-2 lg:grid-cols-4">
+            <article class="max-w-xs border p-8 border-gray-200">
+              <a href="#">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaf_p68Y3OxWC92WC8GpcYnJyW4xVcnfChTlBpMOUe&s"
+                  class="mb-5 rounded-none"
+                  alt="Image 1"
+                />
+              </a>
+              <h2
+                class="mb-2 text-2xl font-bold leading-tight text-gray-500 dark:text-white"
+              >
+                <a href="#">Our first office</a>
+              </h2>
+              <p
+                class="mb-4 text-lg font-base text-gray-500 dark:text-gray-400"
+              >
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+              >
+                Read in 2 minutes
+              </a>
+            </article>
+            <article class="max-w-xs border p-8">
+              <a href="#">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaf_p68Y3OxWC92WC8GpcYnJyW4xVcnfChTlBpMOUe&s"
+                  class="mb-5 rounded-none"
+                  alt="Image 2"
+                />
+              </a>
+              <h2
+                class="mb-2 text-2xl font-bold leading-tight text-gray-500 dark:text-white"
+              >
+                <a href="#">Enterprise design tips</a>
+              </h2>
+              <p
+                class="mb-4 text-lg font-base text-gray-500 dark:text-gray-400"
+              >
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+              >
+                Read in 12 minutes
+              </a>
+            </article>
+            <article class="max-w-xs border p-8">
+              <a href="#">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaf_p68Y3OxWC92WC8GpcYnJyW4xVcnfChTlBpMOUe&s"
+                  class="mb-5 rounded-none"
+                  alt="Image 3"
+                />
+              </a>
+              <h2
+                class="mb-2 font-bold text-2xl leading-tight text-gray-500 dark:text-white"
+              >
+                <a href="#">We partnered with Google</a>
+              </h2>
+              <p
+                class="mb-4 text-lg font-base text-gray-500 dark:text-gray-400"
+              >
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+              >
+                Read in 8 minutes
+              </a>
+            </article>
+            <article class="max-w-xs border p-8">
+              <a href="#">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaf_p68Y3OxWC92WC8GpcYnJyW4xVcnfChTlBpMOUe&s"
+                  class="mb-5 rounded-none"
+                  alt="Image 4"
+                />
+              </a>
+              <h2
+                class="mb-2 text-2xl font-bold leading-tight text-gray-500 dark:text-white"
+              >
+                <a href="#">Our first project with React</a>
+              </h2>
+              <p
+                class="mb-4 text-lg font-base text-gray-500 dark:text-gray-400"
+              >
+                Over the past year, Volosoft has undergone many changes! After
+                months of preparation.
+              </p>
+              <a
+                href="#"
+                class="inline-flex items-center font-medium underline underline-offset-4 text-primary-600 dark:text-primary-500 hover:no-underline"
+              >
+                Read in 4 minutes
+              </a>
+            </article>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-50 ">
+    <div id="read-more-posts" class="mx-auto max-w-screen-xl  flex flex-1">
+      <div class="px-8 max-w-screen-md mr-auto ">
+        <div class=" ">
+       
+            <ul class="py-8">
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+              <li class="py-8 border-b flex gap-6 flex-col">
+                <div>
+                  <p class="font-bold mb-4 text-gray-400">Infrastructure</p>
+                  <a class="text-4xl font-bold text-gray-500">Twitter reveals first ever Women’s World Cup #GoldenTweet award winners </a>
+                </div>
+                <p class="text-gray-500">By <a class="text-blue-500 mx-1">Twitter Sports</a>on Tuesday,16 July 2019 </p>
+                <p class="text-gray-500">Learn how Shardlib, a new sharding library at Twitter simplifies the management of sharded ads services and enables dynamic resharding of these services without redeploying their clients.</p>
+              </li>
+            </ul>
+          </div>
+  </section>
+  <script>
+    const button = document.getElementById("open-navbar");
+    const navbar = document.getElementById("navbar-default");
+
+    button.addEventListener("click", function () {
+      console.log("hello");
+      navbar.classList.toggle("hidden");
+    });
+
+    document.addEventListener("click", function (event) {
+      if (
+        !event.target.closest("#navbar-default") &&
+        !event.target.closest("#open-navbar") &&
+        navbar.classList.contains("hidden") === false
+      ) {
+        navbar.classList.add("hidden");
+      }
+    });
+  </script>
+</html>
