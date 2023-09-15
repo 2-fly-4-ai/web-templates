@@ -1,0 +1,114 @@
+{
+    "name": "list_posts",
+    "relationship": {
+        "type": "post",
+        "post_type": "list"
+    },
+    "primary_key": [
+        "id"
+    ],
+    "keys": [
+        {
+            "name": "post_id",
+            "columns": [
+                "post_id"
+            ],
+            "unique": true
+        }
+    ],
+    "columns": [
+        {
+            "name": "id",
+            "format": "%d",
+            "type": "bigint(20)",
+            "null": false,
+            "auto_increment": true,
+            "unsigned": true
+        },
+        {
+            "name": "post_id",
+            "format": "%d",
+            "type": "bigint(20)"
+        },
+        {
+            "name": "intro",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "intro",
+                "key": "field_61943d029245f"
+            }
+        },
+        {
+            "name": "list_image",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_image",
+                "key": "field_61943d34d5e03"
+            }
+        },
+        {
+            "name": "body_text",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "body_text",
+                "key": "field_61943d63c5272"
+            }
+        },
+        {
+            "name": "list_overall_description",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_overall_description",
+                "key": "field_6174095f85081"
+            }
+        },
+        {
+            "name": "list_all_asins",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_all_asins",
+                "key": "field_617408938507a"
+            }
+        },
+        {
+            "name": "item_count_list",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "item_count_list",
+                "key": "field_6187f3e2e78ef"
+            }
+        },
+        {
+            "name": "activate_custom_list_post",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "activate_custom_list_post",
+                "key": "field_617409bf85083"
+            }
+        },
+        {
+            "name": "list_product",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_product",
+                "key": "field_617408c88507c",
+                "sub_field_match_patterns": {
+                    "field_617408dc8507d": "list_product_(\\d+)_list_asin",
+                    "field_6174294269d6f": "list_product_(\\d+)_list_title",
+                    "field_617408ef8507e": "list_product_(\\d+)_list_image",
+                    "field_617409118507f": "list_product_(\\d+)_list_description"
+                }
+            }
+        }
+    ],
+    "hash": "f4523f2e4fdb2c742738ebea9e401ed5",
+    "modified": 1637107596
+}

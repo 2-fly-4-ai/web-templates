@@ -1,0 +1,127 @@
+{
+    "name": "roundup",
+    "relationship": {
+        "type": "post",
+        "post_type": "best"
+    },
+    "primary_key": [
+        "id"
+    ],
+    "keys": [
+        {
+            "name": "post_id",
+            "columns": [
+                "post_id"
+            ],
+            "unique": true
+        }
+    ],
+    "columns": [
+        {
+            "name": "id",
+            "format": "%d",
+            "type": "bigint(20)",
+            "null": false,
+            "auto_increment": true,
+            "unsigned": true
+        },
+        {
+            "name": "post_id",
+            "format": "%d",
+            "type": "bigint(20)"
+        },
+        {
+            "name": "intro",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "intro",
+                "key": "field_61dc2a35107b7"
+            }
+        },
+        {
+            "name": "buyers_guide",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "buyers_guide",
+                "key": "field_6193cd1b0ae17"
+            }
+        },
+        {
+            "name": "list_overall_description",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_overall_description",
+                "key": "field_61917314bff95"
+            }
+        },
+        {
+            "name": "info_article",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "info_article",
+                "key": "field_62115cec16c13"
+            }
+        },
+        {
+            "name": "list_all_asins",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_all_asins",
+                "key": "field_61917314c0008"
+            }
+        },
+        {
+            "name": "item_count_list",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "item_count_list",
+                "key": "field_61917314c0042"
+            }
+        },
+        {
+            "name": "activate_custom_list_post",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "activate_custom_list_post",
+                "key": "field_61917314c00b6"
+            }
+        },
+        {
+            "name": "list_product",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_product",
+                "key": "field_61917314c00f4",
+                "sub_field_match_patterns": {
+                    "field_61917314ca777": "list_product_(\\d+)_list_asin",
+                    "field_61917314ca9ec": "list_product_(\\d+)_list_title",
+                    "field_61dd0e25c6571": "list_product_(\\d+)_list_rating",
+                    "field_61917314caa65": "list_product_(\\d+)_list_image",
+                    "field_61917314caaa3": "list_product_(\\d+)_list_description",
+                    "field_61de446036d6a": "list_product_(\\d+)_custom_features",
+                    "field_61de4a2a36d6b": "list_product_(\\d+)_custom_amazon_description",
+                    "field_61de4a3b36d6c": "list_product_(\\d+)_custom_comment_analysis"
+                }
+            }
+        },
+        {
+            "name": "slider_portfolio",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "slider_portfolio",
+                "key": "field_61d90205e8bef"
+            }
+        }
+    ],
+    "hash": "82b1d0aad9ffde1847602491deb7b907",
+    "modified": 1645305443
+}

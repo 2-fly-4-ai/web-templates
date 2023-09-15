@@ -1,0 +1,87 @@
+{
+    "name": "gallery",
+    "relationship": {
+        "type": "post",
+        "post_type": "gallery"
+    },
+    "primary_key": [
+        "id"
+    ],
+    "keys": [
+        {
+            "name": "post_id",
+            "columns": [
+                "post_id"
+            ],
+            "unique": true
+        }
+    ],
+    "columns": [
+        {
+            "name": "id",
+            "format": "%d",
+            "type": "bigint(20)",
+            "null": false,
+            "auto_increment": true,
+            "unsigned": true
+        },
+        {
+            "name": "post_id",
+            "format": "%d",
+            "type": "bigint(20)"
+        },
+        {
+            "name": "list_overall_description",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_overall_description",
+                "key": "field_6192f6f56c9e2"
+            }
+        },
+        {
+            "name": "list_all_asins",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_all_asins",
+                "key": "field_6192f6f56ca55"
+            }
+        },
+        {
+            "name": "item_count_list",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "item_count_list",
+                "key": "field_6192f6f56ca8f"
+            }
+        },
+        {
+            "name": "activate_custom_list_post",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "activate_custom_list_post",
+                "key": "field_6192f6f56cb04"
+            }
+        },
+        {
+            "name": "list_product",
+            "type": "longtext",
+            "map": {
+                "type": "acf_field_name",
+                "identifier": "list_product",
+                "key": "field_6192f6f56cb3d",
+                "sub_field_match_patterns": {
+                    "field_6192f6f5778cb": "list_product_(\\d+)_list_asin",
+                    "field_6192f6f577b74": "list_product_(\\d+)_list_title",
+                    "field_6192f6f577bf2": "list_product_(\\d+)_list_image",
+                    "field_6192f6f577c30": "list_product_(\\d+)_list_description"
+                }
+            }
+        }
+    ],
+    "hash": "3c0efd07afbe41564bc0c198d9f09348",
+    "modified": 1637021602
+}
